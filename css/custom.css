@@ -3,6 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .copy {
   margin-bottom: 20px;
   padding: 0;
@@ -28,15 +32,21 @@ body > footer > div > div > div:nth-child(1) > p {
   padding-bottom: 10px;
 }
 
+.navbar-static-top {
+  margin-top: 94px;
+}
+
 .upper {
-  background: transparent !important;
+  background: #085078 !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #085078 , #85D8CE) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #085078 , #85D8CE) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar {
   margin-bottom: 0px;
 }
 
-body > nav.navbar.navbar-default.navbar-static-top.upper > div > ul > li > a {
+body > nav.navbar.navbar-default.navbar-fixed-top.upper > div > ul > li > a {
   color: white !important;
 }
 
@@ -261,4 +271,16 @@ footer p {
     .f-hr {
       display: none;
     }
+}
+
+@media screen and (max-width: 841px) {
+  .navbar-static-top {
+    margin-top: 188px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .navbar-static-top {
+    margin-top: 135px;
+  }
 }
