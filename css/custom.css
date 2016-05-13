@@ -4,16 +4,24 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+body > footer > div > div > div:nth-child(1) > ul {
+  list-style: none;
+}
+
+body > footer > div > div > div:nth-child(1) > p {
+  padding-bottom: 10px;
+}
+
+.upper {
+  background: transparent !important;
+}
+
 .navbar {
   margin-bottom: 0px;
 }
 
 body > nav.navbar.navbar-default.navbar-static-top.upper > div > ul > li > a {
   color: white !important;
-}
-
-.upper {
-  background: transparent !important;
 }
 
 .no-padding {
@@ -224,11 +232,11 @@ footer p {
 }
 
 @media screen and (max-width:768px) {
-    .container-fluid {
+    .carousel-outter {
       display: none;
     }
 
-    .navbar {
+    body > nav:nth-child(2) {
       margin-bottom: 20px;
     }
 }
