@@ -3,8 +3,19 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+.f-hr {
+  width: 80%;
+}
 
-body > footer > div > div > div:nth-child(1) > ul {
+footer > div > div > div:nth-child(1) > ul {
+  margin-right: 30px;
+}
+
+.carousel-caption > p {
+  color: white !important;
+}
+
+footer > div > div > div:nth-child(1) > ul {
   list-style: none;
 }
 
@@ -238,5 +249,11 @@ footer p {
 
     body > nav:nth-child(2) {
       margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:990px) {
+    .f-hr {
+      display: none;
     }
 }
