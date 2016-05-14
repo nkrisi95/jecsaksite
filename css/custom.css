@@ -3,11 +3,13 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
-.contact-sep {
-  width: 50px;
+#main-nav-collapse > ul.nav.navbar-nav > li > a {
+  padding: 25px 20px;
 }
 
+
+
+ /* ezek felettit add hozzá a custom.css tetejéhez*/
 .btn {
   margin: 13px 15px 0px 5px;
   float: right;
@@ -91,7 +93,7 @@ body > nav.navbar.navbar-default.navbar-fixed-top.upper > div > ul > li > a {
 
 .servers {
   text-align: center;
-  float:right;
+  /* INNEN KI KELL SZEDNI A FLOAT RIGHT OT */
 }
 
 
@@ -300,6 +302,11 @@ footer p {
 
     .navbar-static-top {
       margin-top: 110px;
+    }
+
+    /* ezt is ennek a helyére*/
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+      text-align: center;
     }
 }
 
