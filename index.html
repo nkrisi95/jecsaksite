@@ -11,11 +11,15 @@
 
     <title>Jecsak Site</title>
 
+    <!-- JS -->
+
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
@@ -35,7 +39,7 @@
           <ul class="nav navbar-nav navbar-center">
 
             <li><a href="#"><i class="fa fa-user" aria-hidden="true">Panel</i></a></li>
-            <li><a href="#">Regisztráció/Bejelentkezés</a></li>
+            <li><a id="modal_trigger" href="#modal">Click here to Login or register</a></li>
             <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true">Statisztika</i></a></li>
           </ul>
         </div>
@@ -71,6 +75,70 @@
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
+
+    <div class="container">
+      <div id="modal" class="popupContainer" style="display:none;">
+      	<header class="popupHeader">
+      		<span class="header_title">Login</span>
+      		<span class="modal_close"><i class="fa fa-times"></i></span>
+      	</header>
+        <div class="social_login">
+            <div class="action_btns">
+                <div class="one_half">
+                    <a class="btn btn-primary" href="#" id="login_form" name="login_form">Login</a>
+                </div>
+
+                <div class="one_half last">
+                    <a class="btn btn-success" href="#" id="register_form" name=
+                    "register_form">Sign up</a>
+                </div>
+            </div>
+        </div>
+
+          <section class="popupBody">
+            <div class="user_login">
+                <form>
+                    <label>Email / Username</label> <input type="text"><br>
+                    <label>Password</label> <input type="password"><br>
+
+                    <div class="checkbox">
+                        <input id="remember" type="checkbox"> <label for=
+                        "remember">Remember me on this computer</label>
+                    </div>
+
+                    <div class="action_btns">
+                        <div class="one_half">
+                            <a class="btn btn-default back_btn" href="#">Back</a>
+                        </div>
+
+                        <div class="one_half last">
+                            <a class="btn btn-primary" href="#">Login</a>
+                        </div>
+                    </div>
+                </form>
+
+                <a class="forgot_password" href="#">Forgot password?</a>
+            </div>
+            <div class="user_register">
+                <form>
+                    <label>Full Name</label> <input type="text"><br>
+                    <label>Email Address</label> <input type="email"><br>
+                    <label>Password</label> <input type="password"><br>
+
+                    <div class="action_btns">
+                        <div class="one_half">
+                            <a class="btn btn-default back_btn" href="#">Back</a>
+                        </div>
+
+                        <div class="one_half last">
+                            <a class="btn btn-primary" href="#">Register</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </section>
+      </div>
+    </div>
 
     <div class="container-fluid carousel-outter">
       <div class="row">
@@ -223,6 +291,8 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -234,6 +304,35 @@
     })
     </script>
 
+    <script>
+    $("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
+
+    $(function () {
+        // Calling Login Form
+        $("#login_form").click(function () {
+            $(".social_login").hide();
+            $(".user_login").show();
+            return false;
+        });
+
+        // Calling Register Form
+        $("#register_form").click(function () {
+            $(".social_login").hide();
+            $(".user_register").show();
+            $(".header_title").text('Register');
+            return false;
+        });
+
+        // Going back to Social Forms
+        $(".back_btn").click(function () {
+            $(".user_login").hide();
+            $(".user_register").hide();
+            $(".social_login").show();
+            $(".header_title").text('Login');
+            return false;
+        });
+    });
+    </script>
 </body>
 
 </html>
