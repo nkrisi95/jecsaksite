@@ -3,6 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ .btn {
+   margin: 13px 15px 0px 5px;
+   float: right;
+ }
 
 .img-responsive {
   max-height: 600px;
@@ -18,6 +22,7 @@ footer > div.container > div {
 
 .shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 60px;
 }
 
 .copy {
@@ -48,10 +53,11 @@ body > footer > div > div > div:nth-child(1) > p {
 }
 
 .navbar-static-top {
-  margin-top: 94px;
+  margin-top: 60px;
 }
 
 .upper {
+  height: 60px;
   background: #085078 !important; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #085078 , #85D8CE) !important; /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #085078 , #85D8CE) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -253,6 +259,7 @@ footer p {
 
     .navbar-nav>li>a {
         line-height: normal;
+        padding-top: 20px;
     }
 
     .navbar-nav {
@@ -277,8 +284,16 @@ footer p {
       display: none;
     }
 
-    body > nav:nth-child(2) {
-      margin-bottom: 20px;
+    .upper {
+      height: 110px;
+    }
+
+    .shadow {
+      height: 110px;
+    }
+
+    .navbar-static-top {
+      margin-top: 110px;
     }
 }
 
@@ -286,16 +301,4 @@ footer p {
     .f-hr {
       display: none;
     }
-}
-
-@media screen and (max-width: 841px) {
-  .navbar-static-top {
-    margin-top: 188px;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .navbar-static-top {
-    margin-top: 135px;
-  }
 }
