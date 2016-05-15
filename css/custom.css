@@ -3,6 +3,33 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+
+.vpsbtn {
+  text-align: center;
+}
+
+.container > div > div.col-md-8 > div > div > div > div > ul {
+  padding: 0;
+  list-style: none;
+}
+
+.circle {
+  border-radius: 50%;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  background: #7cb85c;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none !important;
+}
+
+.blue {
+  background: #85D8CE;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
 #main-nav-collapse > ul.nav.navbar-nav > li > a {
   padding: 25px 20px;
 }
@@ -10,10 +37,6 @@
 
 
  /* ezek felettit add hozzá a custom.css tetejéhez*/
-.btn {
-  margin: 13px 15px 0px 5px;
-  float: right;
-}
 
 .img-responsive {
   max-height: 600px;
