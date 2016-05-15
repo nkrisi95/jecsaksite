@@ -3,6 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+div.container > div > div.col-lg-8 > div > table > tbody > tr > th > a {
+  text-decoration: none;
+}
+
 
 .games {
   background: #085078 !important; /* fallback for old browsers */
