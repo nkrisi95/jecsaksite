@@ -3,6 +3,24 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+body > div.container > div > div.col-md-8 > div > div.row.well.blue.games > a {
+  margin-top: 7px;
+  color: black;
+  text-decoration: none;
+}
+
+body > div.container > div > div.col-md-8 > div > div.row.well.blue.games > a:hover {
+  color: white;
+}
+
+div.container > div > div.col-md-8 > div > div.row.well.blue.games > p {
+  font-size: 14px;
+}
+
+div.container > div > div.col-md-8 > div > div > div > div > ul {
+  font-weight: bold;
+}
+
 .circle > p {
   color: white;
 }
