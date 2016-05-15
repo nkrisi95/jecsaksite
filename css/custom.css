@@ -3,6 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+.circle > p {
+  color: white;
+}
+
 .kiemelt {
   -webkit-box-shadow: 5px 5px 40px 5px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px 5px 40px 5px rgba(0,0,0,0.75);
@@ -33,7 +37,7 @@
   background: #85D8CE;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  color: #085078;
+  color: white;
   border: none !important;
 }
 
